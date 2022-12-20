@@ -9,12 +9,35 @@ const DeathsSection = () => {
         <>
             <Container>
                 <Row>
-                    <Col sm={8}>
-                        the Character section
+                    <Col sm={12}>
+                        TOTAL DEATHS: NUMBER
                     </Col>
-                    <Col sm={4}>
-                        the Death section
+                </Row>
+                <br></br>
+                <Row>
+                    <Col sm={12}>
+                        Deaths
                     </Col>
+                </Row>
+                <br></br>
+                <Row>
+                    <Container>
+                        <Row>
+                            <Col sm={12}>
+                                item 1
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={12}>
+                                item 2
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col sm={12}>
+                                itme 3
+                            </Col>
+                        </Row>
+                    </Container>
                 </Row>
             </Container>
         </>
