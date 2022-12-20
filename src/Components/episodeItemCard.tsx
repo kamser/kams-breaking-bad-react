@@ -1,21 +1,36 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { EpisodeItemProps } from '../Utils/EpisodesInterfaces';
 
-function BasicExample() {
+const EpisodeItem = (props: EpisodeItemProps) => {
+    const {title, season, episode, air_date} = props.Episode;
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <>
+      {[
+        'Success',
+      ].map((variant) => (
+        <Card
+          bg={variant.toLowerCase()}
+          key={variant}
+          text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+          style={{ width: '18rem' }}
+          className="mb-2"
+        >
+          <Card.Header>{title}</Card.Header>
+          <Card.Body>
+            <Card.Title>{variant} {season} </Card.Title>
+            <Card.Text>
+              {episode}
+            </Card.Text>
+            <Card.Text>
+              {air_date}
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      ))}
+    </>
   );
 }
 
-export default BasicExample;
+export default EpisodeItem;

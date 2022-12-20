@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Episode } from '../Utils/EpisodesInterfaces';
+import EpisodeItem from './episodeItemCard';
 
 
 const testEpisodesDate: Array<Episode> = [
@@ -51,14 +52,14 @@ const EpisodeSectionContainer = () => {
         <>
            <Container>
                 <Row>
-                    <Col sm>{testEpisodesDate[0].title}</Col>
-                    <Col sm>{testEpisodesDate[2].air_date}</Col>
-                    <Col sm>{testEpisodesDate[3].season}</Col>
+                    <Col sm><EpisodeItem Episode={testEpisodesDate[0]}/></Col>
+                    <Col sm><EpisodeItem Episode={testEpisodesDate[1]}/></Col>
+                    <Col sm><EpisodeItem Episode={testEpisodesDate[2]}/></Col>
                 </Row>
                 <Row>
-                    <Col sm>{testEpisodesDate[4].title}</Col>
-                    <Col sm>{testEpisodesDate[5].air_date}</Col>
-                    <Col sm>{testEpisodesDate[1].season}</Col>
+                    <Col sm><EpisodeItem Episode={testEpisodesDate[3]}/></Col>
+                    <Col sm><EpisodeItem Episode={testEpisodesDate[4]}/></Col>
+                    <Col sm><EpisodeItem Episode={testEpisodesDate[5]}/></Col>
                 </Row>
             </Container>
         </>
