@@ -3,14 +3,14 @@ import { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { seasonData } from '../Assets/episodesData';
 
-function EpisodesFilter() {
+const EpisodesFilter = () => {
 
     const [selectedSeason, setSelectedSeason] = useState<string | null>(seasonData.SeasonOne);
     
     const changeSeason = (newSelectedSeason: string | null) => {
         setSelectedSeason(newSelectedSeason);
     }
-    
+
     return (
         <Dropdown onSelect={(eventKey: string | null) => changeSeason(eventKey)}>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
