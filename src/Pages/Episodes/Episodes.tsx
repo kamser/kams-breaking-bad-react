@@ -9,10 +9,16 @@ import EpisodesFilter from '../../Components/episodesFilter';
 const Episodes = () => {
     return(
         <>
-            <div>
-                <EpisodesFilter></EpisodesFilter>
-                <h1>This is the Episodes Page</h1>
-            </div>
+            <Container>
+                <Row className="justify-content-sm-left">
+                    <Col sm={12}>
+                        <EpisodesFilter></EpisodesFilter>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm>sm=true</Col>
+                </Row>
+            </Container>
         </>
     );
 
