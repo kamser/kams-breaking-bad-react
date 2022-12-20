@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const CharacterSection = () => {
+const CharacterItem = () => {
     return(
         <>
             <Container>
@@ -21,4 +21,4 @@ const CharacterSection = () => {
     );
 }
 
-export default CharacterSection;
+export default CharacterItem;
