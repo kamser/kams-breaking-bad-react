@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import EpisodesFilter from '../../Components/episodesFilter';
+import EpisodeSectionContainer from '../../Components/episodeSectionContainer';
 
 
 const Episodes = () => {
@@ -16,7 +17,9 @@ const Episodes = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm>sm=true</Col>
+                    <Col sm={12}>
+                        <EpisodeSectionContainer></EpisodeSectionContainer>
+                    </Col>
                 </Row>
             </Container>
         </>
