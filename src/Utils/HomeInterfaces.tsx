@@ -9,3 +9,13 @@ export interface Character {
 export interface CharacterItemProps {
     character: Character
 }
+
+export interface Death{
+    cause: string;
+    responsible: string;
+    lastWords: string;
+}
+
+export interface DeathProps{
+    death: Death;
+}

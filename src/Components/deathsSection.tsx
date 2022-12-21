@@ -3,6 +3,41 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Death } from '../Utils/HomeInterfaces';
+import DeathItem from './deathItem';
+
+const testDeathsData: Array<Death> = [
+    {
+        cause: "NIPI",
+        responsible: "PAPI GAVI",
+        lastWords: "FUCK"
+    },
+    {
+        cause: "NIPI",
+        responsible: "PAPI GAVI",
+        lastWords: "FUCK"
+    },
+    {
+        cause: "NIPI",
+        responsible: "PAPI GAVI",
+        lastWords: "FUCK"
+    },
+    {
+        cause: "NIPI",
+        responsible: "PAPI GAVI",
+        lastWords: "FUCK"
+    },
+    {
+        cause: "NIPI",
+        responsible: "PAPI GAVI",
+        lastWords: "FUCK"
+    },
+    {
+        cause: "NIPI",
+        responsible: "PAPI GAVI",
+        lastWords: "FUCK"
+    }
+];
 
 const DeathsSection = () => {
     return(
@@ -24,17 +59,17 @@ const DeathsSection = () => {
                     <Container>
                         <Row>
                             <Col sm={12}>
-                                item 1
+                                <DeathItem death={testDeathsData[0]}/>
                             </Col>
                         </Row>
                         <Row>
                             <Col sm={12}>
-                                item 2
+                                <DeathItem death={testDeathsData[1]}/>
                             </Col>
                         </Row>
                         <Row>
                             <Col sm={12}>
-                                itme 3
+                                <DeathItem death={testDeathsData[2]}/>
                             </Col>
                         </Row>
                     </Container>

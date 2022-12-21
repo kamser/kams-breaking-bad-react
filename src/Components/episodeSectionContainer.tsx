@@ -44,7 +44,7 @@ const testEpisodesDate: Array<Episode> = [
         episode: "episode1",
         air_date: "air_date1"
     },
-]
+];
 
 
 const EpisodeSectionContainer = () => {
